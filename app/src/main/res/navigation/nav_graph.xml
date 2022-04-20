@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.practicaroom.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/go_to_addGeneroFragment"
+            app:destination="@id/addGeneroFragment" />
+        <action
+            android:id="@+id/go_to_viewGeneroFragment"
+            app:destination="@id/viewGeneroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewGeneroFragment"
+        android:name="com.example.practicaroom.ViewGeneroFragment"
+        android:label="fragment_view_genero"
+        tools:layout="@layout/fragment_view_genero" />
+    <fragment
+        android:id="@+id/addGeneroFragment"
+        android:name="com.example.practicaroom.AddGeneroFragment"
+        android:label="fragment_add_genero"
+        tools:layout="@layout/fragment_add_genero">
+        <action
+            android:id="@+id/go_viewClasificacionFragment"
+            app:destination="@id/viewGeneroFragment" />
+    </fragment>
+</navigation>
