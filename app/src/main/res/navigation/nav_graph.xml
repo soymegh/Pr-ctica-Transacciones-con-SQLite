@@ -16,6 +16,18 @@
         <action
             android:id="@+id/go_to_viewGeneroFragment"
             app:destination="@id/viewGeneroFragment" />
+        <action
+            android:id="@+id/action_menu_to_addclasificacion"
+            app:destination="@id/addClasificacionFragment" />
+        <action
+            android:id="@+id/action_menu_to_viewclasificacion"
+            app:destination="@id/viewClasificacionFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_editGeneroFragment"
+            app:destination="@id/editGeneroFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_deleteGeneroFragment"
+            app:destination="@id/deleteGeneroFragment" />
     </fragment>
     <fragment
         android:id="@+id/viewGeneroFragment"
@@ -31,4 +43,24 @@
             android:id="@+id/go_viewClasificacionFragment"
             app:destination="@id/viewGeneroFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/addClasificacionFragment"
+        android:name="com.example.practicaroom.AddClasificacionFragment"
+        android:label="fragment_add_clasificacion"
+        tools:layout="@layout/fragment_add_clasificacion" />
+    <fragment
+        android:id="@+id/viewClasificacionFragment"
+        android:name="com.example.practicaroom.ViewClasificacionFragment"
+        android:label="fragment_view_clasificacion"
+        tools:layout="@layout/fragment_view_clasificacion" />
+    <fragment
+        android:id="@+id/deleteGeneroFragment"
+        android:name="com.example.practicaroom.DeleteGeneroFragment"
+        android:label="fragment_delete_genero"
+        tools:layout="@layout/fragment_delete_genero" />
+    <fragment
+        android:id="@+id/editGeneroFragment"
+        android:name="com.example.practicaroom.EditGeneroFragment"
+        android:label="fragment_edit_genero"
+        tools:layout="@layout/fragment_edit_genero" />
 </navigation>

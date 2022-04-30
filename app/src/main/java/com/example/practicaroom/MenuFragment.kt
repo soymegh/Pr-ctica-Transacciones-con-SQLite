@@ -9,6 +9,7 @@ import androidx.navigation.findNavController
 import com.example.practicaroom.databinding.FragmentMenuBinding
 
 class MenuFragment : Fragment() {
+
     private lateinit var fBinding: FragmentMenuBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,5 +36,18 @@ class MenuFragment : Fragment() {
             it.findNavController().navigate(R.id.go_to_viewGeneroFragment
             )
         }
+
+        fBinding.btnAddClasificacion.setOnClickListener{
+            it.findNavController().navigate(R.id.action_menu_to_addclasificacion)
+        }
+        fBinding.btnViewClasificacion.setOnClickListener{
+            it.findNavController().navigate(R.id.action_menu_to_viewclasificacion)
+        }
+       /* fBinding.btnDelGenero.setOnClickListener{
+            it.findNavController().navigate(R.id.action_menuFragment_to_deleteGeneroFragment)
+        }
+        fBinding.btnEditGenero.setOnClickListener{
+            it.findNavController().navigate(R.id.action_menuFragment_to_editGeneroFragment)
+        }*/
     }
 }

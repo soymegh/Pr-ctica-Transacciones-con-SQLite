@@ -10,14 +10,45 @@
         android:layout_height="match_parent"
         android:layout_margin="10dp">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Menu"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+
         <Button
             android:id="@+id/btnAddGenero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="240dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="238dp"
+            android:layout_marginEnd="0dp"
             android:layout_marginBottom="20dp"
             android:text="Agregar Genero" />
+
+        <Button
+            android:id="@+id/btnAddClasificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="171dp"
+            android:layout_marginEnd="-4dp"
+            android:layout_marginBottom="20dp"
+            android:text="Agregar Clasificacion" />
+
+        <Button
+            android:id="@+id/btnViewClasificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="289dp"
+            android:text="Ver Clasificacion" />
 
         <Button
             android:id="@+id/btnViewGenero"
@@ -26,6 +57,8 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="350dp"
             android:text="Ver Generos" />
+
+
     </RelativeLayout>
 
 </FrameLayout>

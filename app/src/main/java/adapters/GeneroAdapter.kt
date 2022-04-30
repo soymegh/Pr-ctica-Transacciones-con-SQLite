@@ -3,10 +3,11 @@ package adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-    import com.example.practicaroom.databinding.ItemGeneroBinding
+import com.example.practicaroom.databinding.ItemGeneroBinding
 import model.entities.GeneroEntity
 
 class GeneroAdapter(val GeneroLista: List<GeneroEntity>): RecyclerView.Adapter<GeneroAdapter.GeneroHolder> (){
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
